@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation List</title>
+</head>
+<body>
+    <h1>Donation List</h1>
+    <ul>
+        {% for donation in donations %}
+        <li>{{ donation.donor.name }} - ${{ donation.amount }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
